@@ -8,15 +8,15 @@ Cоздать образ и загрузить его на докер хаб.
 
 sudo apt install docker.io
 
-Собираю image:
+2. Создаю Dockerfile и cобираю image:
 
 sudo docker build --tag "dev:v1" .
 
-2. Создаю аккаунт и репозиторий на docker.hub
+3. Создаю аккаунт и репозиторий на docker.hub
 
 https://hub.docker.com/repository/docker/alekseyshibayev/gradle_4.9-openjdk_11-alpine
 
-3. Заливаю image на докер хаб:
+4. Заливаю image на докер хаб:
 
 docker login
 
