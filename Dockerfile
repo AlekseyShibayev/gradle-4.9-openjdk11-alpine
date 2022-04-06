@@ -18,6 +18,9 @@ RUN apk -U add --no-cache curl; \
 
 ENV PATH=${PATH}:/gradle-${GRADLE_VERSION}/bin
 
+# WITH openssh
+RUN apk update && apk add --no-cache openssh
+
 RUN mkdir -p /work
 RUN mkdir -p /GRADLE_CACHE
 
